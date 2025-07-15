@@ -1,21 +1,27 @@
 {
-  "name": "geminiclone",
+  "name": "kuvaka-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-  "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "@google/generative-ai": "^0.7.1",
+    "bcrypt": "^5.1.1",
+    "bullmq": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^7.0.0",
+    "ioredis": "^5.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "rate-limit-redis": "^1.7.0",
+    "redis": "^4.7.1",
+    "stripe": "^13.9.0",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.0.1"
   }
 }
